@@ -16,7 +16,7 @@ function App() {
       try {
         const data = await getDocs(moviesCollectionRef);
         const filteredData = data.docs.map((doc) => ({...doc.data, id:doc.id}))
-        console.log(data)
+        console.log(filteredData)
       } catch (err) {
         console.error(err)
       }
